@@ -36,3 +36,67 @@
     transform: rotate(360deg);
   }
 }
+
+.crypto-card {
+  position: relative;
+  width: 14.75rem;
+  height: 19.875rem;
+  border-radius: 15px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(98, 106, 136, 0.05);
+  border-left: 1px solid rgba(98, 106, 136, 0.2);
+  border-right: 1px solid rgba(98, 106, 136, 0.2);
+  background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(46, 49, 73, 0.1) 107.43%);
+  backdrop-filter: blur(50px);
+}
+
+.curve-obj {
+  position: relative;
+  width: 6.563rem;
+  height: 3.25rem;
+  background-color: #14172B;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid rgba(98, 106, 136, 0.3);
+}
+
+.curve-obj::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -50px;
+  width: 50px;
+  height: 23px;
+  background-color: transparent;
+  transform: rotate(-18deg);
+  border-top-right-radius: 50px;
+  box-shadow: 45px -15px 0 15px #14172b;
+  border-right: 1px solid rgba(98, 106, 136, 0.15);
+}
+
+.curve-obj::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: -50px;
+  width: 50px;
+  height: 23px;
+  background-color: transparent;
+  transform: rotate(18deg);
+  border-top-left-radius: 50px;
+  box-shadow: -45px -15px 0 15px #14172b;
+  border-left: 1px solid rgba(98, 106, 136, 0.15);
+}
+
+.coin-header-logo {
+  border: 1px solid rgb(53, 45, 69);
+}
+
+.price-bg {
+  background-color: #14172B;
+  border-radius: 50px;
+  border: 1px solid;
+  border-image-source: linear-gradient(180deg, rgba(236, 240, 255, 0.1) 0%, rgba(59, 63, 87, 0) 100%);
+}
