@@ -27,7 +27,7 @@ export const AssetCard = (props) => {
 
           <div className='text-secondary text-xs text-center mt-3'>Price</div>
 
-          <div className='cont text-[14px] p-1.5 mx-4 mt-2 text-center'>{props.assets.tvl}</div>
+          <div className='text-[14px] p-1.5 mx-4 mt-2 text-center price-bg'>{props.assets.tvl}</div>
 
           <div className='text-secondary text-xs text-center mt-3'>TVL</div>
 
