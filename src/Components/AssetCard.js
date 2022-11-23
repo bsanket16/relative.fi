@@ -7,7 +7,7 @@ export const AssetCard = (props) => {
   return (
     <div className='px-8'>
 
-      <div className='flex items-center justify-center w-[88px] h-[90px] relative rounded-full z-[1000] ml-[74.5px] top-[41px] coin-header-logo' style={props.assets.style}>
+      <div className='flex items-center justify-center w-[88px] h-[90px] relative rounded-full z-[1000] ml-[74.5px] top-[41px] coin-header-logo'>
         <img src={props.assets.icon} alt="logo"></img>
       </div>
 
@@ -18,11 +18,11 @@ export const AssetCard = (props) => {
 
         <div>
 
-          <div className='text-primary text-xs text-center mt-3'>{props.assets.title}</div>
+          <div className='text-primary text-xs text-center mt-3 capitalize'>{props.assets.title}</div>
 
           <div className='flex text-[14px] p-1.5 mx-4 mt-3 justify-center items-center price-bg'>
             <div>{props.assets.current}</div>
-            <div className='text-[10px] absolute ml-[140px]' style={isProfit ? {color: '#00FFA3'} : {color: '#FF4D4D'}}> {isProfit ? '+' : ''}{props.assets.return}%</div>
+            <div className={`text-[10px] absolute ml-[140px] ${isProfit ? 'text-green' : 'text-red'}`}> {isProfit ? '+' : ''}{props.assets.return}%</div>
           </div>
 
           <div className='text-secondary text-xs text-center mt-3'>Price</div>
