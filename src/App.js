@@ -4,7 +4,7 @@ import crypto from './Components/CoinIcons'
 
 
 function App() {
-  return ( <TrendingAssets assets={crypto.coinIcons} /> );
+  return ( <TrendingAssets assets={crypto.coinIcons} /> )
 }
 
-export default App;
+export default App
