@@ -13,8 +13,7 @@ module.exports = {
         require('./icons/Binance Coin.png')
       ],
       style: {
-        "background": 'linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(234, 179, 0, 0.06) 100%)',
-        "backdropFilter": "blur(50px)"
+        "background": 'linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(234, 179, 0, 0.06) 100%)'
       }
     },
     {
@@ -30,8 +29,7 @@ module.exports = {
         require('./icons/Binance Coin.png')
       ],
       style: {
-        "background": "linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(220, 31, 255, 0.1) 100%)",
-        "backdropFilter": "blur(50px)"
+        "background": "linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(220, 31, 255, 0.1) 100%)"
       }
     },
     {
@@ -47,8 +45,7 @@ module.exports = {
         require('./icons/Binance Coin.png')
       ],
       style: {
-        "background": "linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(237, 240, 244, 0.1) 100%)",
-        "backdropFilter": "blur(50px)"
+        "background": "linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(237, 240, 244, 0.1) 100%)"
       }
     },
     {
@@ -64,8 +61,7 @@ module.exports = {
         require('./icons/Binance Coin.png')
       ],
       style: {
-        "background": "linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(234, 179, 0, 0.06) 100%)",
-        "backdropFilter": "blur(50px)"
+        "background": "linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(234, 179, 0, 0.06) 100%)"
       }
     },
     {
@@ -81,8 +77,7 @@ module.exports = {
         require('./icons/Binance Coin.png')
       ],
       style: {
-        "background": "linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(228, 45, 4, 0.1) 100%)",
-        "backdropFilter": "blur(50px)"
+        "background": "linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(228, 45, 4, 0.1) 100%)"
       }
     }
   ]
