@@ -32,9 +32,9 @@ export const AssetCard = (props) => {
           <div className='text-secondary text-xs text-center mt-3'>TVL</div>
 
           <div className='flex price-bg p-1.5 mx-14 justify-evenly mt-3'>
-            <img className='cursor-pointer w-[20px] h-[20px]' src={props.assets.pairs[0]} alt="pair one"></img>
-            <img className='cursor-pointer w-[20px] h-[20px]' src={props.assets.pairs[1]} alt="pair two"></img>
-            <img className='cursor-pointer w-[20px] h-[20px]' src={props.assets.pairs[2]} alt="pair three"></img>
+            {props.assets.pairs.map((pair) => {
+              return <img className='cursor-pointer w-[20px] h-[20px]' src={pair} alt="pair" key={pair}></img>
+            })}
           </div>
 
           <div className='text-secondary text-xs text-center mt-3'>Popular pairs</div>
