@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
-import PropTypes from 'prop-types';
-import {AssetCard} from './AssetCard'
 
-export const TrendingAssets = (props) => {
+import {AssetCard} from './AssetCard'
+import {coinIcons} from '../Contents/coinIcons'
+
+export const TrendingAssets = () => {
   const [coinData, setCoinData] = useState([])
 
   useEffect(() => {
@@ -25,33 +26,19 @@ export const TrendingAssets = (props) => {
 
         {coinData.map((coin) => {
 
-          let {slug, tvl} = coin
-          let slugIcon = '', pairs = []
+          let {slug, tvl} = coin, pairs = []
 
-          // getting the icons
-          props.assets.forEach((item) => {
-
-            if (item.slug === slug) {
-              slugIcon = item.img
-            }
-
-            coin.pairedAssetSlugs.forEach((pair) => {
-              if (pair === item.slug) {
-                pairs.push(item.img)
-              }
-            })
-
+          coin.pairedAssetSlugs.forEach((pair) => {
+            pairs.push(coinIcons[pair])
           })
 
-          // rendering card
-          // hardcoded missing values
           return <AssetCard assets = {
             {
-              icon: slugIcon,
               title: slug,
+              icon: coinIcons[slug],
               current: "$31,812.80",
-              return: 100,
               tvl: tvl,
+              return: 100,
               pairs: pairs
             }
           }
@@ -62,8 +49,4 @@ export const TrendingAssets = (props) => {
 
     </div>
   )
-}
-
-TrendingAssets.propTypes = {
-  assets: PropTypes.array,
 }
